@@ -74,31 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helper.cs" />
-    <Compile Include="SqlHelper.cs" />
-    <Compile Include="UpdateVehicle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpdateVehicle.Designer.cs">
-      <DependentUpon>UpdateVehicle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="VehicleDetail.cs">
-      <DependentUpon>VehicleEnitites.tt</DependentUpon>
-    </Compile>
-    <Compile Include="VehicleEnitites.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VehicleEnitites.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="VehicleEnitites.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VehicleEnitites.tt</DependentUpon>
-    </Compile>
-    <Compile Include="VehicleEnitites.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VehicleEnitites.edmx</DependentUpon>
-    </Compile>
     <Compile Include="VehicleForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,9 +90,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vehicle.cs" />
     <Compile Include="VehicleCollection.cs" />
-    <EmbeddedResource Include="UpdateVehicle.resx">
-      <DependentUpon>UpdateVehicle.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="VehicleDialog.resx">
       <DependentUpon>VehicleDialog.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,28 +116,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EntityDeploy Include="VehicleEnitites.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>VehicleEnitites.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="VehicleEnitites.edmx.diagram">
-      <DependentUpon>VehicleEnitites.edmx</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="VehicleEnitites.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>VehicleEnitites.Context.cs</LastGenOutput>
-      <DependentUpon>VehicleEnitites.edmx</DependentUpon>
-    </Content>
-    <Content Include="VehicleEnitites.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>VehicleEnitites.edmx</DependentUpon>
-      <LastGenOutput>VehicleEnitites.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

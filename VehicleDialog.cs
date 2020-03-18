@@ -39,7 +39,7 @@ namespace VehicleUsingAdoDotNet
             txtSpeed.Text = vehicle.Speed.ToString();
             dtpdate.Text = vehicle.DateOfManufacture.ToString();
         }
-        VehicleForm objForm = new VehicleForm();
+        //VehicleForm objForm = new VehicleForm();
         List<Vehicle> lstVehicle = new List<Vehicle>();
 
         public string TypeOfVehicle
